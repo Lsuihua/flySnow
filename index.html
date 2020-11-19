@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>canvas雪花飘落效果</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="snow"></canvas>
+  <script src="./game.js"></script>
+  <script src="./snow.js"></script>
+  <script>
+    var game = new Game({
+      "canvasId":"snow"
+    });
+    game.start();
+  </script>
+</body>
+</html>
